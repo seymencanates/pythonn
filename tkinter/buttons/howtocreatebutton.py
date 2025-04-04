@@ -33,5 +33,6 @@ button2=tkn.Button(form,text='Tıkla2'
                    ,command=topla)
 
 button2.pack(side=tkn.LEFT)
+#we packed button on the left side
 
 form.mainloop()
