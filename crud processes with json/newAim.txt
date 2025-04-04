@@ -1,0 +1,7 @@
+
+
+
+Prepare an ai that determines automatically head of dict's.
+
+This ai would help some functionality and it includes some nlp to understand which person we are saving
+in data.

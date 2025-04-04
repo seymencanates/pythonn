@@ -1,0 +1,49 @@
+1. Spam E-posta Tespiti
+Kelime Sayısı	"Bedava" Kelimesi Var mı?	Link İçeriyor mu?	Büyük Harf Oranı (%)	Etiket (Spam mi?)
+120	Evet	Evet	50	1 (Spam)
+45	Hayır	Hayır	5	0 (Normal)
+200	Evet	Evet	70	1 (Spam)
+60	Hayır	Evet	10	0 (Normal)
+
+
+2. Film Yorumlarının Duygu Analizi
+Yorum Uzunluğu (Karakter)	Olumlu Kelime Sayısı	Olumsuz Kelime Sayısı	Ünlem İçeriyor mu?	Etiket (Duygu)
+150	5	1	Evet	1 (Olumlu)
+300	2	4	Hayır	0 (Olumsuz)
+100	7	0	Evet	1 (Olumlu)
+250	1	5	Hayır	0 (Olumsuz)
+
+3. Kullanıcının Spor Yapıp Yapmadığını Tahmin Etme
+Adım Sayısı	Kalori Tüketimi	Günlük Egzersiz Süresi (dk)	Uyku Süresi (Saat)	Etiket (Sporcu mu?)
+10,000	2,500	60	7	1 (Sporcu)
+3,000	3,000	10	6	0 (Sporcu Değil)
+8,000	2,000	45	8	1 (Sporcu)
+2,000	3,500	5	5	0 (Sporcu Değil)
+
+4. Kullanıcının Satın Alma Eğilimi
+Web Sitesinde Geçirilen Süre (dk)	Daha Önce Alışveriş Yaptı mı?	Ürünün Fiyatı ($)	Gösterilen Reklam Sayısı	Etiket (Satın Alır mı?)
+10	Evet	50	5	1 (Satın Alır)
+5	Hayır	200	10	0 (Satın Almaz)
+15	Evet	30	2	1 (Satın Alır)
+3	Hayır	100	8	0 (Satın Almaz)
+
+Karmaşık Veri Seti: E-Ticaret Müşteri Analizi
+Kullanıcı ID	Yaş	Cinsiyet	Ortalama Sepet Tutarı ($)	Son 1 Ayda Alışveriş Sayısı	Son 6 Ayda Alışveriş Sayısı	Son Alışverişten Beri Gün	Gönderilen Reklam Sayısı	Siteye Giriş Sıklığı (haftalık)	Kredi Kartı Kullanıyor mu?	Müşteri Hizmetleri ile Temas Sayısı	Etiket (Satın Alır mı?)
+1001	25	Kadın	120	3	10	5	7	4	Evet	1	1 (Satın Alır)
+1002	40	Erkek	50	1	2	30	3	1	Hayır	0	0 (Satın Almaz)
+1003	32	Kadın	200	5	15	2	10	6	Evet	2	1 (Satın Alır)
+1004	29	Erkek	80	2	5	20	5	3	Hayır	0	0 (Satın Almaz)
+1005	45	Kadın	300	8	20	1	12	7	Evet	3	1 (Satın Alır)
+1006	37	Erkek	40	1	3	50	2	1	Hayır	0	0 (Satın Almaz)
+
+Bu Veri Setinde Neler Var?
+Öznitelikler (Features):
+Kullanıcı bilgileri (Yaş, Cinsiyet, Kredi Kartı Kullanımı)
+Alışveriş alışkanlıkları (Sepet Tutarı, Son X Ayda Yapılan Alışverişler, Siteye Giriş Sıklığı)
+Kullanıcının müşteri hizmetleriyle temas sayısı
+Kullanıcıya gönderilen reklam sayısı
+Etiket (Target):
+1 (Satın Alır) / 0 (Satın Almaz)
+Nasıl Kullanılabilir?
+Bu veri setini bir lojistik regresyon, karar ağacı veya sinir ağı modeliyle eğiterek yeni müşterilerin satın alma ihtimallerini tahmin edebilirsin.
+Eğer istersen, bu veri setine uygun bir makine öğrenmesi kodu yazabiliriz. 🚀

@@ -1,0 +1,38 @@
+    {
+        "people":{
+            "firstPerson": 
+                {   
+                    "name": "iclal", 
+                    "surname": "akça", 
+                    "age": "12"
+                }, 
+            "secondPerson": 
+            {
+                "name": "iclall", 
+                "surname": "akça",
+                "age": "12"
+            }, 
+            "thirdPerson": {
+                "name": "ali", 
+                "surname": "yılmaz", 
+                "age": "15"
+            }, 
+            "fourthPerson": {
+                "name": "ayşe", 
+                "surname": "çelik", 
+                "age": "18"
+            }, 
+            "fifthPerson": {
+                "name": "mehmet", 
+                "surname": "kara", 
+                "age": "20"
+            },
+            "sixthPerson":{
+                "name":"deli",
+                "surname":"mehmet",
+                "age":"32"
+            }
+    }}
+
+
+    

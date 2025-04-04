@@ -1,0 +1,65 @@
+1️⃣ Makine Öğrenmesi Nedir?
+Makine öğrenmesi, veriden öğrenen ve gelecekteki veriler için tahminler yapabilen bir sistem oluşturma sürecidir.
+📌 İnsan gibi kurallar yazmadan, veriyi kullanarak kendi kurallarını oluşturur.
+
+Örnek:
+📌 Bir çocuk, kedi ve köpekleri ayırt etmeyi nasıl öğrenir?
+
+Önce farklı kedi ve köpekleri görür (veri).
+Ailesi ona "Bu bir kedi", "Bu bir köpek" der (etiketler).
+Beyni farklı özellikleri öğrenir (kulak şekli, tüy uzunluğu, göz yapısı vb.).
+Sonra görmediği bir hayvanı görünce tahmin yapar:
+Eğer tüyleri kısa, küçük ve ince sesli → Kedi olabilir.
+Eğer büyük, havlıyor ve uzun kulaklı → Köpek olabilir.
+İşte makine öğrenmesi de aynı mantıkla çalışır!
+
+
+2️⃣ Makine Öğrenmesi Nasıl Çalışır?
+Makine öğrenmesi 3 temel adımdan oluşur:
+
+📌 1. Veriyi Hazırlama
+Modelin öğrenmesi için veriyi toplarız ve işleriz.
+Örnek:
+less
+Kopyala
+Düzenle
+Uzunluk | Genişlik | Tür
+--------|---------|---------
+5.1 cm  | 3.5 cm  | Çiçek A
+4.9 cm  | 3.0 cm  | Çiçek A
+6.2 cm  | 3.4 cm  | Çiçek B
+Model, bu verilerden öğrenerek yeni çiçekleri tahmin eder.
+📌 2. Modeli Eğitme (Training)
+Model verileri alır ve örüntüleri (patterns) öğrenir.
+Karar Ağaçları (Decision Trees), veriyi dallara ayırarak öğrenir:
+"Çiçeğin uzunluğu 5 cm'den büyük mü?"
+Evetse, büyük çiçek → Tür B olabilir.
+Hayırsa, küçük çiçek → Tür A olabilir.
+📌 Özetle: Model, farklı örnekleri görerek hangi durumlarda hangi tahminin doğru olduğunu öğrenir.
+
+📌 3. Modeli Test Etme ve Tahmin Yapma
+Eğitilen model, daha önce görmediği verilerle test edilir.
+Model, öğrendiği kurallara göre tahmin yapar.
+Doğruluk oranı hesaplanarak modelin başarısı ölçülür.
+3️⃣ Öğrettiğim Modeli Basitleştirerek Açıklayalım.
+Hatırlarsan Iris veri seti ile bir Karar Ağacı Modeli (Decision Tree) oluşturmuştuk. Şimdi bunu sadeleştirelim:
+
+
+1️⃣ Veri Setimiz:
+
+Çiçeklerin uzunluğu ve genişliği gibi özellikleri var.
+3 farklı çiçek türü var:
+Setosa (0)
+Versicolor (1)
+Virginica (2)
+2️⃣ Modeli Eğittik:
+
+Model, bu 3 çiçeği ayırt etmeyi öğrendi.
+Örneğin:
+Çiçeğin uzunluğu > 2.5 cm ise, Virginica olabilir.
+Çiçeğin genişliği < 1.5 cm ise, Setosa olabilir.
+3️⃣ Tahmin Yaptık:
+
+Model yeni bir çiçek gördüğünde, öğrendiği kuralları kullanarak tahminde bulunuyor.
+📌 Kendi Kelimelerinle Açıklayabilir misin? 🎯
+Bu model sana mantıklı geldi mi? Anlamadığın bir noktayı açıklayayım mı? 🚀

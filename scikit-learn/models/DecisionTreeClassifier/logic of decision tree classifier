@@ -1,0 +1,73 @@
+**Karar Ağacı Modeli (DecisionTreeClassifier) Mantığı:**
+
+Karar ağaçları, veriyi ağaç yapısında dallara ayırarak sınıflandırma veya regresyon yapmayı amaçlar. İşte temel mantığı:
+
+- **Dallanma:**  
+  Veriyi, en iyi ayrım yapan özniteliklere göre dallara ayırır. Her düğümde, bir özellik ve belirli bir eşik değeri seçilir; bu eşik, veriyi iki gruba böler.
+
+- **İmpurity Ölçüleri:**  
+  Hangi özellik ve eşik değerinin kullanılacağına karar verirken, **Gini İndeksi** veya **Entropy** gibi ölçütler kullanılır. Bu ölçütler, düğümdeki karışıklığı (yani farklı sınıfların ne kadar karışık olduğunu) ölçer; hedef, düğümleri mümkün olduğunca "saf" hale getirmektir.
+
+- **Rekursif Bölme (Recursive Splitting):**  
+  Her dal, aynı mantıkla alt düğümlere bölünür. Bu, belirli bir durdurma kriteri (maksimum derinlik, minimum örnek sayısı vb.) sağlanana kadar devam eder.
+
+- **Karar Verme:**  
+  Ağaç tamamen inşa edildiğinde, yeni bir örnek ağaç boyunca ilerler. Her düğümde yapılan karşılaştırmalar sonucunda, örnek bir yaprak düğüme (leaf node) ulaşır ve o düğümdeki sınıf etiketi tahmin olarak verilir.
+
+**Özetle:**  
+DecisionTreeClassifier, verideki örüntüleri öğrenerek, her adımda veriyi en iyi şekilde ayıran kuralları (öznitelik ve eşik değerlerini) belirler. Bu sayede, ağaç yapısı sayesinde yorumlanabilir ve anlaşılabilir kararlar alınır. 
+
+Daha detaylı bir açıklama veya örnek üzerinden gitmek ister misin?
+
+
+Örnek Karar Ağacı: İris Veri Seti
+1. İlk Düğüm (Root Node)
+Soru: "Taç yaprağı uzunluğu (petal length) 2.45'ten küçük mü?"
+
+Neden Bu Soru?
+Araştırmalar ve gözlemler, İris setosa türünün genellikle taç yaprağı uzunluğunun 2.45 cm’den küçük olduğunu gösterir.
+
+Eğer CEVAP: EVET → Bu örnek büyük ihtimalle İris setosa türüdür.
+Eğer CEVAP: HAYIR → Bu durumda örnek, ya İris versicolor ya da İris virginica olabilir; yani başka özelliklere bakmamız gerekir.
+2. İkinci Düğüm (Eğer İlk Soru Hayır Dedi)
+Soru: "Taç yaprağı genişliği (petal width) 1.75'ten küçük mü?"
+
+Neden Bu Soru?
+Taç yaprağı genişliği, kalan iki türü ayırt etmekte faydalı bir özelliktir.
+
+Eğer CEVAP: EVET → Bu örnek muhtemelen İris versicolor türüdür.
+Eğer CEVAP: HAYIR → Bu durumda örnek büyük ihtimalle İris virginica türüdür.
+Ağaç Yapısının İşleyişi
+Yeni Bir Örnek Girdisi:
+Diyelim ki elimizde yeni bir çiçek var ve ölçümleri şu:
+
+Taç yaprağı uzunluğu: 3.0 cm
+Taç yaprağı genişliği: 1.8 cm
+İlk Karar:
+
+Taç yaprağı uzunluğu < 2.45?
+3.0 cm, 2.45 cm’den büyük olduğu için cevap Hayır.
+İkinci Karar:
+
+Taç yaprağı genişliği < 1.75?
+1.8 cm, 1.75 cm’den büyük olduğu için cevap Hayır.
+Sonuç:
+
+Karar ağacımızın yaprak (leaf) düğümünde: İris virginica olarak sınıflandırılır.
+Karar Ağacının Mantığına Genel Bakış
+Dallanma (Branching):
+Her düğümde, bir özellik (örneğin taç yaprağı uzunluğu) ve belirli bir eşik değeri (örneğin 2.45 cm) seçilir. 
+Bu özellik, veriyi en iyi şekilde ikiye ayıran kritere göre belirlenir.
+
+Saflık (Purity):
+Seçilen eşik, düğümdeki örneklerin mümkün olduğunca aynı sınıfa ait olmasını hedefler. Yani, eğer bir düğümdeki 
+örneklerin %90'ı İris setosa ise, o düğüm "saf" kabul edilir.
+
+Rekursif Bölme:
+İlk düğümde veriyi ayırdıktan sonra, alt düğümler de aynı şekilde veriyi daha da alt sınıflara ayırır. 
+Bu işlem, durdurma kriterlerine (örneğin maksimum ağaç derinliği ya da düğümde minimum örnek sayısı) 
+ulaşana kadar devam eder.
+
+Yorumlanabilirlik:
+Karar ağaçları, hangi özelliklerin ne zaman ve nasıl kullanıldığını gösterdiği için yorumlanması oldukça kolaydır. 
+Her adımda, "neden böyle karar verildi?" sorusuna net cevaplar verir.

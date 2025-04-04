@@ -1,0 +1,81 @@
+No worries at all! Let's break it down **very simply**. I'll explain it 
+like you're a complete beginner, and then give an example so it's super clear.
+
+### **What is IQR (Interquartile Range)?**
+
+Think of it like this: Imagine you have a set of numbers that are all 
+mixed up. Some numbers are **very low**, and some are **very high**. The 
+,**IQR rule** helps us figure out where the **middle** of the data is and **how far** it spreads.
+
+So, we first divide the data into **quartiles**. This is just a fancy 
+way of saying we split the data into **4 equal parts**.
+
+- **Q1 (First Quartile)**: This is the **25% point**. It's like the 
+number where 25% of the numbers are below it.
+- **Q3 (Third Quartile)**: This is the **75% point**, where 75% of 
+the numbers are below it.
+
+The **IQR** is the difference between these two points:
+- **IQR = Q3 - Q1**
+
+The **IQR rule** says: 
+- **Any number** that's too far away from the middle part of the data is an **outlier**.
+
+To find out what "too far" means, we use this formula:
+- **Outliers are anything below (Q1 - 1.5 * IQR) or above (Q3 + 1.5 * IQR)**.
+
+So, basically:
+- **Lower bound** = Q1 - 1.5 * IQR
+- **Upper bound** = Q3 + 1.5 * IQR
+
+### **Why 1.5?**
+- The number **1.5** is just a threshold that works well in most cases.
+ It’s a balance — not too strict, but not too lenient either.
+
+If a number is **outside** of this range, it's considered an **outlier** 
+and is usually **removed** from the data.
+
+---
+
+### **Example**:
+
+Let’s say we have the following 5 numbers (we’ll keep it simple for now):
+
+`[1, 5, 10, 15, 100]`
+
+1. **Step 1: Sort the Data**  
+   First, sort the numbers from smallest to largest:
+   
+   `[1, 5, 10, 15, 100]`
+
+2. **Step 2: Find Q1 and Q3**  
+   - **Q1 (25%)**: The middle of the lower half of the data (ignore the 
+   middle number, which is 10 in this case). So, **Q1 is 5**.
+   - **Q3 (75%)**: The middle of the upper half of the data. So, **Q3 is 15**.
+
+3. **Step 3: Calculate IQR**  
+   Now, subtract Q1 from Q3:
+   - **IQR = Q3 - Q1 = 15 - 5 = 10**
+
+4. **Step 4: Calculate the Lower and Upper Bounds**  
+   - **Lower bound** = Q1 - 1.5 * IQR = 5 - 1.5 * 10 = 5 - 15 = **-10**
+   - **Upper bound** = Q3 + 1.5 * IQR = 15 + 1.5 * 10 = 15 + 15 = **30**
+
+5. **Step 5: Identify Outliers**  
+   - Any number **below -10** or **above 30** would be an outlier.
+   - In our data, **100** is **greater than 30**, so it’s an outlier.
+
+---
+
+### **Conclusion**:
+- The **IQR rule** helps you find **outliers** by looking at how far 
+away numbers are from the "middle" part of the data.
+- **Anything** that's **too far away** from the middle (more than 1.5 
+times the spread) is considered an **outlier**.
+- In our example, **100** is an outlier.
+
+---
+
+I hope this example helps clarify the IQR rule! It's basically a 
+way to keep the data in a reasonable range and remove anything that 
+seems too extreme. Let me know if you need more examples! 😊

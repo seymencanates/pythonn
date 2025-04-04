@@ -1,0 +1,108 @@
+    {
+        "people":{
+            "firstPerson": 
+                {   
+                    "name": "iclal", 
+                    "surname": "akça", 
+                    "age": "12"
+                }, 
+            "secondPerson": 
+            {
+                "name": "iclall", 
+                "surname": "akça",
+                "age": "12"
+            }, 
+            "thirdPerson": {
+                "name": "ali", 
+                "surname": "yılmaz", 
+                "age": "15"
+            }, 
+            "fourthPerson": {
+                "name": "ayşe", 
+                "surname": "çelik", 
+                "age": "18"
+            }, 
+            "fifthPerson": {
+                "name": "mehmet", 
+                "surname": "kara", 
+                "age": "20"
+            },
+            "sixthPerson":{
+                "name":"deli",
+                "surname":"mehmet",
+                "age":"32"
+            },
+            "seventhPerson": {
+                "name": "zeynep",
+                "surname": "demir",
+                "age": "25"
+            },
+            "eighthPerson": {
+                "name": "hasan",
+                "surname": "toprak",
+                "age": "40"
+            },
+            "ninthPerson": {
+                "name": "selin",
+                "surname": "aydın",
+                "age": "22"
+            },
+            "tenthPerson": {
+                "name": "cem",
+                "surname": "bozkurt",
+                "age": "35"
+            },
+            "eleventhPerson": {
+                "name": "emre",
+                "surname": "özdemir",
+                "age": "28"
+            },
+            "twelfthPerson": {
+                "name": "seda",
+                "surname": "güneş",
+                "age": "23"
+            },
+            "thirteenthPerson": {
+                "name": "murat",
+                "surname": "kılıç",
+                "age": "19"
+            },
+            "fourteenthPerson": {
+                "name": "bahar",
+                "surname": "yıldız",
+                "age": "30"
+            },
+            "fifteenthPerson": {
+                "name": "yusuf",
+                "surname": "çınar",
+                "age": "26"
+            },
+            "sixteenthPerson": {
+                "name": "ayhan",
+                "surname": "sarı",
+                "age": "33"
+            },
+            "seventeenthPerson": {
+                "name": "nazlı",
+                "surname": "eren",
+                "age": "24"
+            },
+            "eighteenthPerson": {
+                "name": "baran",
+                "surname": "baysal",
+                "age": "27"
+            },
+            "nineteenthPerson": {
+                "name": "gizem",
+                "surname": "arık",
+                "age": "29"
+            },
+            "twentiethPerson": {
+                "name": "kaan",
+                "surname": "demirtaş",
+                "age": "21"
+            }
+    }}
+
+
+    

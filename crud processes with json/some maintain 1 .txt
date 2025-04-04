@@ -1,0 +1,9 @@
+
+
+If user has 2 or 3 name in his/her idendity how do we save it specifically? 
+
+Research it an apply it into
+the application.
+
+And we can also prepare some functionality like the user could determine the structure of json
+

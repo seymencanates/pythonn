@@ -1,0 +1,79 @@
+
+
+Programming language should have a beginning,processes and an end
+
+All thing have a algorithm
+
+Algorithm of going school
+
+
+how to use algorithm?
+
+Algorithm provides to coding in ANY language
+
+
+
+
+
+examples of algorithms
+
+
+brush your teeth before sleep
+
+go to school if time has come
+
+
+example1:
+
+algorithm with only text
+
+1-beginning
+
+2-enter, two number(number1,number2);
+
+3-multiply , (c=number1*number2)
+
+4-print, result of multiply(c)
+
+5-Stop
+
+
+pseudo-code version of algorithm:
+
+1-beginning
+
+2-input(number1,number2)
+
+3-multiply=number1*number2
+
+4-print(multiply)
+
+5-Stop
+
+flow charts
+
+math version of algorithm:
+
+1-begin 
+
+2-A,b
+
+3-C=A*b
+
+4-C 
+
+5-Stop 
+
+another algorithm(how to account area of square)
+
+1- begin 
+
+2- a 
+
+3- alan = a*a 
+
+4-alan 
+
+5-end
+
+  

@@ -1,0 +1,40 @@
+The term **interquartile** refers to the **range** between the **first quartile (Q1)** and the **third quartile (Q3)** of a dataset. It is a measure of **spread** and helps describe the **middle 50%** of the data.
+
+### **Let’s break it down:**
+
+- **Q1 (First Quartile)**: This is the **25th percentile**, which means **25%** of the data points fall below it.
+- **Q3 (Third Quartile)**: This is the **75th percentile**, which means **75%** of the data points fall below it.
+  
+So, the **interquartile range (IQR)** is simply the **difference** between the **third quartile (Q3)** and the **first quartile (Q1)**:
+
+\[
+\text{IQR} = Q3 - Q1
+\]
+
+### **Why is Interquartile Range (IQR) Useful?**
+
+- The **IQR** tells you how spread out the middle 50% of your data is. 
+- It’s especially helpful because it is **less affected by extreme values (outliers)** compared to the **range** (which is the difference between the maximum and minimum values in the dataset).
+
+### **Example:**
+Let’s take this dataset:
+```
+[1, 3, 5, 7, 9, 11, 13, 15, 17]
+```
+
+1. **Step 1: Find the Quartiles**  
+   - **Q1** (25th percentile): This is the median of the first half of the data: **3**.
+   - **Q3** (75th percentile): This is the median of the second half of the data: **13**.
+
+2. **Step 2: Calculate the IQR**
+   - **IQR** = **Q3 - Q1** = **13 - 3** = **10**.
+
+So, the **interquartile range (IQR)** for this dataset is **10**.
+
+### **Summary:**
+
+- **Interquartile** simply means **the range between the first quartile (Q1) and third quartile (Q3)**.
+- **IQR** is a measure of the **middle 50%** of your data.
+- It’s useful because it **ignores outliers**, focusing only on the central data values.
+
+Let me know if this clears things up! 😊

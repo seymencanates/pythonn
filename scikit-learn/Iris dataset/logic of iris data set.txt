@@ -1,0 +1,39 @@
+Veri Yapısı ve Özellikler
+Örnek Sayısı: 150 adet örnek içerir.
+Öznitelikler (Features): Her örnek, 4 temel özellikten oluşur:
+Sepal Length (Çanak yaprağı uzunluğu)
+Sepal Width (Çanak yaprağı genişliği)
+Petal Length (Taç yaprağı uzunluğu)
+Petal Width (Taç yaprağı genişliği)
+Sınıflar (Targets): Üç farklı iris türü:
+Iris-setosa
+Iris-versicolor
+Iris-virginica
+Mantıksal Yapı
+Öznitelik Temelli Sınıflandırma:
+
+Her bir çiçeğin ölçümleri, türleri arasındaki farklılıkları ortaya koyar.
+Örneğin, Iris-setosa, genellikle diğer türlere göre daha kısa taç yapraklarına sahiptir; bu nedenle, belirgin ölçümsel farklar sayesinde kolayca ayırt edilebilir.
+Sınıflar Arası Ayrım:
+
+Çiçeklerin ölçümleri (uzunluk ve genişlik) farklı kombinasyonlarla değerlendirildiğinde, üç tür arasında belirgin ayrımlar oluşur.
+Karar ağaçları veya diğer sınıflandırma algoritmaları bu ölçümlere dayanarak, "bu örneğin türü nedir?" sorusuna yanıt verir.
+Eğitim ve Test Süreci:
+
+Veri seti, modelin eğitilmesi ve doğrulanması için eğitim ve test setlerine bölünür.
+Model, eğitim verisinden öğrenerek, bilinmeyen örnekler üzerinde doğru sınıflandırma yapmayı hedefler.
+Veri Görselleştirme:
+
+Ölçümlerin dağılımı, scatter plotlar kullanılarak görselleştirilebilir. Bu, hangi özelliklerin türler arasında daha belirgin farklar yarattığını anlamamıza yardımcı olur.
+Özetle
+İris veri seti, her çiçeğin fiziksel ölçümleri ile üç farklı tür arasındaki ilişkiyi ortaya koyarak, makine öğrenmesi algoritmalarının sınıflandırma yapma mantığını öğrenmek için ideal bir örnektir.
+Bu yapı sayesinde algoritmalar, ölçümler arasındaki farkları kullanarak hangi çiçeğin hangi türe ait olduğunu belirler.
+
+Herhangi bir detay veya ek açıklama ister misin?
+
+
+
+
+
+
+

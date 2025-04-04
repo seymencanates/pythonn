@@ -1,0 +1,75 @@
+Why would we erase the extreme numbers as outliers? Whats the consequences if we dont remove them?
+
+Great question! Deciding whether to remove **outliers** is an important part of **data cleaning** in data 
+analysis and machine learning. Here’s a simple explanation of why **outliers** are often removed, and what can happen if you don’t.
+
+### **Why Remove Outliers?**
+
+1. **Distort the Analysis**  
+   Outliers are **extreme values** that are far away from the rest of the data. These extreme values can
+    **distort statistical measures** like the **mean (average)** and **variance**.
+   
+   - For example, if you're calculating the **average salary** in a company and one person makes 
+   $1,000,000 while everyone else makes between $40,000-$60,000, the average will be heavily skewed 
+   by the **$1,000,000** salary. The mean will be much higher than most of the salaries, which doesn’t 
+   represent the typical salary at all.
+   
+2. **Affect Machine Learning Models**  
+   Many **machine learning algorithms** (e.g., linear regression, k-nearest neighbors) assume that the 
+   data follows a **normal distribution** (a bell curve). Outliers can disrupt these assumptions, leading to inaccurate predictions.
+   
+   For instance:
+   - **Regression models** that try to predict trends can get **misled** by extreme data points, making predictions less reliable.
+   - **Clustering algorithms** like **k-means** may treat outliers as separate clusters, which doesn’t 
+   make sense in the context of the data.
+   
+3. **Mislead Statistical Tests**  
+   Outliers can make some statistical tests less reliable because they can artificially inflate the variance or correlation. This could lead to false conclusions.
+
+### **What Happens if We Don’t Remove Outliers?**
+
+1. **Skewed Results**  
+   The results of calculations such as the **mean**, **variance**, or **standard deviation** will be skewed. This leads to **misleading insights** because the extreme values are given too much weight.
+
+   - **Example**: If you are calculating the average age of a group of people, and one person is 120 years old, the mean age will be **incorrectly** much higher than the majority of people’s ages. This misrepresentation can affect any decisions or insights derived from that data.
+
+2. **Inaccurate Predictions**  
+   **Machine learning models** that use the data for training may perform poorly or give inaccurate predictions because the model is influenced by those extreme values.
+   
+   - **Example**: A machine learning model might predict that someone with a very high **annual income** should be in a higher-income group, but the model may not generalize well to most of the population.
+
+3. **False Patterns**  
+   Outliers can cause you to **mistake random noise for patterns**. You might think there's a significant relationship or trend in the data, but in reality, it’s just the outliers causing that effect.
+
+4. **Inefficient Data Storage**  
+   Sometimes, outliers are just errors or data points that **don’t belong** (e.g., a typo in data entry). Keeping them around in a large dataset can make processing more inefficient and even lead to errors later on in the analysis or modeling phase.
+
+---
+
+### **When Not to Remove Outliers**
+Sometimes, **outliers are important** and should **not** be removed:
+
+1. **True Extremes**:  
+   If the outliers represent actual **extreme cases** that are significant for analysis, like high-value transactions, rare events, or unusual occurrences, they should not be removed. For example, in **fraud detection** or **anomaly detection**, outliers might be exactly what you're trying to find.
+
+2. **Business or Domain Insight**:  
+   Sometimes the outliers contain important information related to the specific **business problem** or **domain** you're working with. For example, a company’s most loyal customers might have high purchase amounts, and removing them could result in missing important patterns.
+
+---
+
+### **Example: Without Removing Outliers**
+
+Let’s say you’re looking at a dataset of **house prices** in a city, where most homes cost between **$200,000 and $500,000**. However, there’s one **extreme outlier** where a mansion is priced at **$50,000,000**.
+
+If you don't remove this outlier:
+- **Mean Price**: The average will be heavily **skewed** and will suggest that house prices are higher than they really are for the **majority** of buyers.
+- **Predictions**: A model trained on this data might wrongly predict that houses will cost much more than they actually do.
+
+---
+
+### **Summary:**
+- **Removing outliers** helps to **improve the accuracy** of your analysis and models by making sure that **extreme values** don’t distort the results.
+- If you **don’t remove them**, they can affect calculations, predictions, and lead to misleading insights.
+- **Always be careful** to check whether the outliers are real or just errors before deciding to remove them.
+
+Does that help make sense of it? Let me know if you want more details or examples! 😊
