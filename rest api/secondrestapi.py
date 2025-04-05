@@ -2,7 +2,7 @@ import requests
 import json
 
 # Define the URL and the API key
-url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent"
+url = ""
 api_key = ""
 
 # Define the headers
