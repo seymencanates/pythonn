@@ -7,7 +7,7 @@ sys.path.append(os.path.abspath(os.path.dirname(__file__)))
 server = 'localhost\\GHOSTRIDER262'
 database = 'dataOfMinee'
 user = 'conn'
-password = 'seymenSeymen'
+password = ''
 
 def create_connection():
     try:

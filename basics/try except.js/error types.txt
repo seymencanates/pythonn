@@ -1,0 +1,14 @@
+Hata Tipi	Ne Zaman Olur?	Mini Açıklama
+NameError	Tanımsız değişken kullanırsan	print(x) ama x hiç tanımlanmamışsa
+TypeError	Yanlış türde veriyle işlem yaparsan	"merhaba" + 5 gibi şeyler
+ValueError	Geçerli türde ama yanlış değerde veri varsa	int("merhaba") gibi
+IndexError	Listede olmayan bir indeksi çağırırsan	liste[100] ama liste kısa mesela
+KeyError	Sözlükte olmayan bir anahtar çağırırsan	sozluk["olmayan"]
+ZeroDivisionError	Sıfıra bölme yaparsan	5 / 0 (oops!)
+AttributeError	Olmayan bir özelliğe erişmeye çalışırsan	"merhaba".push() gibi uydurma metotlar
+ImportError	Var olmayan bir modülü import edersen	import uyduruk_modul
+FileNotFoundError	Açılmak istenen dosya yoksa	open("olmayan.txt")
+IndentationError	Kod girintisi yanlışsa	if True:\nprint("hmm") gibi girintisiz
+SyntaxError	Yazım hatası varsa	print("merhaba (tırnak kapanmamış)
+
+

@@ -4,7 +4,7 @@ import requests
 import pyodbc
 
 
-API_KEY = "c64a9ef0bb2f356dc442fd87b3b4e519"
+API_KEY = ""
 #we mostly uses keys for access into the 
 
 page=1
