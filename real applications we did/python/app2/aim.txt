@@ -1,0 +1,25 @@
+
+
+Our aim is to prepare a date saver app into the file. The program can save the real date including;
+
+exact second,
+exact minute,
+exact hour,
+exact day,
+exact month,
+exact year
+
+The parameters is going to save into the dict object which we can easily convert into the json or else which
+we can save into the database
+
+When the use click button (we will use tkinter for this) the program will save the date into the dict object.
+
+Question 1 : Where we can use these type of code in real life as an asset?
+
+
+
+
+
+Question 2 : How can we improve this code?Which features we can add?
+
+
