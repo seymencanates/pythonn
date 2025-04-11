@@ -1,6 +1,10 @@
 import pandas as pd
 from sklearn.preprocessing import LabelEncoder, MultiLabelBinarizer
 
+
+#Our main aim is on here to train machine learning project based on animals and their features 
+
+
 data = {
     "red fox": {
         "species": "vulpes vulpes",
