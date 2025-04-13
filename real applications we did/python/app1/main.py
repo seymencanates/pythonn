@@ -21,19 +21,19 @@ data = {
         "mainColor": "red-brown with white underside",
         "howToBreed": "Sexual reproduction; mating season in winter",
         "scientificName": "Vulpes vulpes",
-        "habitat": ["Forests", "grasslands", "urban areas", "tundra"],#
+        "habitat": ["Forests", "grasslands", "urban areas", "tundra"],
         "lifeTime": "3-6 years in the wild, up to 14 years in captivity",
-        "habitsOfFeeding": ["small mammals", "birds", "fruits", "insects"],#
+        "habitsOfFeeding": ["small mammals", "birds", "fruits", "insects"],
         "differencesBetweenMaleAndFemale": "Males are typically larger than females",
         "dailyActivity": "Mostly nocturnal, active during the night",
         "socialStructure": "Solitary or small family groups",
-        "communicationTypes": ["Vocalizations (barks, screams)", "body language", "scent marking"],#
-        "distributionOfGeographical": ["Found across Europe", "Asia", "North America","parts of Australia"],#
+        "communicationTypes": ["Vocalizations (barks, screams)", "body language", "scent marking"],
+        "distributionOfGeographical": ["Found across Europe", "Asia", "North America","parts of Australia"],
         "balanceOfHunterHunting": "Predator and scavenger, balances predator-prey dynamics",
         "naturalThreats": ["large predators", "diseases"],#
-        "threatsCausedByHumanity": ["habitat destruction", "roadkill", "poaching"],#
+        "threatsCausedByHumanity": ["habitat destruction", "roadkill", "poaching"],
         "situationOfProtection": "Least Concern (IUCN Red List)",
-        "specialAbilities": ["Sharp senses (hearing, sight)", "adaptable diet"],#
+        "specialAbilities": ["Sharp senses (hearing, sight)", "adaptable diet"],
         "turkishName": "Kızıl Tilki"
     },
     "arctic fox": {

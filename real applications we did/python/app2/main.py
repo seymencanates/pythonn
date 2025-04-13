@@ -1,8 +1,10 @@
 
 
 import tkinter as tk
-
 import datetime
+
+
+
 
 dates = {
 
@@ -64,8 +66,12 @@ button = tk.Button(form,text='Tıkla',fg='black',
 
 
 
+
+
 button.pack()
 form.mainloop()
+
+
 
 
 
