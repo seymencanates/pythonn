@@ -4,11 +4,10 @@ firstDictIsAboutAnimals = {
       "animal1" : "zebra",
       "animal2" : "lion",
       "animal3" : "carrot"
-
 }
 
 #dict is created by python programmers its for storing data with key value pair features.
-#dict is changeable and do now allow duplicates.
+#dict is changeable and do not allow duplicates.
 
 #What is a duplicate on programming?
 #A duplicate situation is repeating data on the stored value.So with this "doesnt allowing" feature
@@ -93,8 +92,8 @@ if "sex" in creatingADictDynamically:
 firstDictIsAboutAnimals["animal1"] = "crocodile"
 
 print(firstDictIsAboutAnimals["animal1"])
-#or else u can use update method
 
+#or else u can use update method
 firstDictIsAboutAnimals.update({"animal1" : "hipopotam"})
 
 print(firstDictIsAboutAnimals["animal1"])

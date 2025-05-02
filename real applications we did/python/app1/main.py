@@ -5,6 +5,12 @@ from sklearn.preprocessing import LabelEncoder, MultiLabelBinarizer
 #Our main aim is on here to train machine learning project based on animals and their features 
 
 
+yapay zekaya kullanıcının belirttiği konuda eğitim seti oluşturmak için hazır yapay zekalar kullanılacak
+
+Önce kullanıcının girdiği konuyla ilgili ana başlıklar alınacak 
+sonra ana başlıklarla ilgili detaylar alınacak
+
+
 data = {
     "red fox": {
         "species": "vulpes vulpes",

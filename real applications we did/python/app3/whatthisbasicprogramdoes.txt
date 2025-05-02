@@ -1,0 +1,7 @@
+
+
+
+with every button click the program should throw us some randomizated int , string or float values
+Are u into this?
+
+I will call this basic app as "randomized"
