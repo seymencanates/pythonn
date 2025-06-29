@@ -1,15 +1,18 @@
 
 import tkinter as guiProvider
-#we imported tkinter library for access into the gui 
+#we imported tkinter library for access into the gui
+
 import random as randomChooser
 #we imported random library for;
-    #determine the random numbers,
-    #accessing with randomized way
+#determine the random numbers,
+#accessing with randomized way
 
 gui = guiProvider.Tk()
 #we created a gui page
+
 gui.title("Randomized App")
 #we gave a title to gui page
+
 gui.geometry("500x400")
 #we specified sizes of gui page , the height is 500 pixel and the width is 400 pixel
 
@@ -21,6 +24,8 @@ listbox = guiProvider.Listbox(gui, height = 15,
                   font = "Helvetica",
                   fg = "yellow")
 #We created a listbox for show the random chosen numbers
+
+#A question : how do we style this better?
 
 listbox.pack()
 #we packed and added listbox to the gui
