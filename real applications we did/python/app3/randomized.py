@@ -81,7 +81,9 @@ button.pack()
 exitButton = guiProvider.Button(gui,text="Exit",command=closePage)
 exitButton.pack()
     #we created a button for exit from the gui
- 
 
 
+
+
+    
 gui.mainloop()
